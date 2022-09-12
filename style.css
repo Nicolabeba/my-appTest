@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f5f4f2;
+}
+
+.accordion {
+  width: 90%;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.box-container {
+  position: relative;
+  top: 20px;
+}
+
+.accordion-container1 {
+  background: #1184d1;
+  border-radius: 10px;
+  padding: 25px;
+  position: relative;
+  z-index: 4;
+}
+
+.accordion-container2 {
+  background: #0777c2;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: -17px;
+  position: relative;
+  z-index: 3;
+}
+
+.accordion-container3 {
+  background: #ef8451;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: -17px;
+  position: relative;
+  z-index: 2;
+}
+
+.accordion-container4 {
+  background: #ea6419;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: -17px;
+  position: relative;
+  z-index: 1;
+}
+
+.accordion-item {
+  border-radius: 10px;
+}
+.accordion-item-header {
+  color: white;
+  cursor: pointer;
+  background: #1184d1;
+
+  font-size: 40px;
+  position: relative;
+  bottom: 20px;
+  z-index: 5;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.accordion-item-header::after {
+  content: '\002197';
+  font-size: 2rem;
+  color: #1184d1;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  left: 84%;
+  bottom: 21rem;
+  padding-left: 5px;
+  padding-right: 6px;
+}
+
+.accordion-item-header2,
+.accordion-item-header3,
+.accordion-item-header4 {
+  margin-top: 10px;
+  padding: 30px auto 7px 30px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.accordion-item-body1 {
+  color: white;
+  padding: 10px;
+}
+
+.accordion-item-body2,
+.accordion-item-body3,
+.accordion-item-body4 {
+  color: white;
+  padding: 10px;
+}
+
+.accordion-item-body-content1 h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.accordion-item-body-content1 h2 {
+  max-width: 555.45px;
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 33px;
+  margin: 30px 0px 30px 0px;
+}
+
+.accordion-item-body-content1 p {
+  max-width: 428px;
+  color: #cceaff;
+  border-top: 1px solid rgba(196, 196, 196, 0.5);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.logos {
+  padding: 20px;
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .accordion-item-header::after {
+    content: '\002197';
+    font-size: 2rem;
+    color: #1184d1;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    left: 90%;
+    bottom: 17.5rem;
+    padding-left: 5px;
+    padding-right: 6px;
+  }
+}
