@@ -9,11 +9,13 @@
 body {
   font-family: 'Roboto', sans-serif;
   background: #f5f4f2;
+  width: fit-content;
+  margin: auto;
 }
 
 .accordion {
-  width: 90%;
-  margin: 2rem auto;
+  width: 95%;
+  margin: 1rem auto;
   position: relative;
 }
 
@@ -70,7 +72,7 @@ body {
   bottom: 20px;
   z-index: 5;
   border-radius: 10px;
-  padding: 25px;
+  padding: 30px;
 }
 
 .accordion-item-header::after {
@@ -80,8 +82,8 @@ body {
   background: white;
   border-radius: 50%;
   position: relative;
-  left: 84%;
-  bottom: 21rem;
+  left: 86%;
+  bottom: 17.5rem;
   padding-left: 5px;
   padding-right: 6px;
 }
@@ -147,12 +149,143 @@ body {
   margin: 10px;
 }
 
-@media screen and (min-width: 700px) {
-  body {
-    max-width: 1000px;
-    margin: auto;
-  }
+.title {
+  color: #237fbd;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin-left: 6%;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
 
+.title-text {
+  margin-left: 35px;
+}
+
+.line1 {
+  position: absolute;
+  width: 7px;
+  height: 2.93px;
+  background: #237fbd;
+  margin-top: -4px;
+  border-radius: 20px;
+}
+
+.line2 {
+  position: absolute;
+  width: 20px;
+  height: 2.93px;
+  background: #237fbd;
+  margin-top: 2px;
+  border-radius: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card1 {
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+  margin: 20px;
+  max-width: 608px;
+  min-width: 300px;
+  height: 526px;
+  margin: auto;
+}
+
+.card1:hover {
+  opacity: 0.8;
+  box-shadow: 4px 4px 8px #b8b7b7;
+}
+
+.card1 h4 {
+  margin: 10px;
+  max-width: 330px;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 33px;
+}
+
+.card1 img {
+  box-sizing: border-box;
+  border-radius: 20px;
+  max-width: 600px;
+  min-width: 300px;
+  object-fit: cover;
+}
+
+.card-detail {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.card-detail aside {
+  background: #00a3ff;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+  color: white;
+  padding: 3px 15px 3px 15px;
+}
+
+.card-detail p {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.card2 {
+  text-decoration: none;
+  color: black;
+  border-radius: 20px;
+  margin: 20px;
+  width: 276px;
+  height: fit-content;
+}
+
+.card2 h5 {
+  max-width: 255px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 15px;
+}
+
+.card2 p {
+  width: 223px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 15px;
+}
+
+.card2:hover {
+  opacity: 0.8;
+  box-shadow: 4px 4px 8px #b8b7b7;
+}
+
+.pic {
+  background: black;
+  height: 204px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
   .accordion-item-header::after {
     content: '\002197';
     font-size: 2rem;
