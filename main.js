@@ -2,14 +2,12 @@ const accordionItemHeaders = document.querySelectorAll('.accordion-item-header')
 
 accordionItemHeaders.forEach((accordionItemHeader, i) => {
   accordionItemHeader.addEventListener('click', (event) => {
-    // accordionContainer1.classList.toggle('active');
     accordionItemHeader.classList.toggle('active');
-    const accordionContainer1 = document.getElementById('container1');
-
+    const accordionItemBody1 = document.querySelector('.accordion-item-body1');
     if (accordionItemHeader.classList.contains('active')) {
-      accordionContainer1.style.display = 'none';
+      accordionItemBody1.style.maxHeight = 0;
     } else {
-      accordionContainer1.style.display = 'block';
+      accordionItemBody1.style.maxHeight = accordionItemBody1.scrollHeight + 'px';
     }
   });
 });
